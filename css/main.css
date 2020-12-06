@@ -1,0 +1,364 @@
+#navigation-bar{
+    width:100%;
+    height: 100px;
+    
+
+}
+.bar-bring-to-center{
+    width:100%;
+    height:100px;
+    text-align: center;
+    display:flex;
+    flex-direction:row ;
+    
+    
+}
+.store-name{
+    width:10%;
+    height:100px;
+    margin-left: 20px;
+  
+    align-items: center;
+    float:left;
+        
+}
+
+    .logo{
+        width: 80%;
+        text-align: center;
+       
+        height:60px;
+        font-size:16px;
+        line-height:60px;
+        padding: 0 20px;
+        margin-top: 20px;
+        display:inline-block;
+        text-decoration:none;
+        cursor: pointer;
+    }
+    .menu{
+        width:50%;
+        float:left;
+        
+    }
+ .menu-blog{
+     width:60%;
+     height:80px;
+     display:flex;
+     flex-direction: row;
+     
+   align-items: center;
+     margin-left: 200px;
+     margin-top:10px ;
+     justify-content: space-between;
+     padding:6px 15px;
+     font-size: 16px;
+     
+ }
+
+    
+    
+ 
+ .search-sign{
+     width:40%;
+     height:100px;
+     
+     
+ }
+ .sign{
+    width:100%;
+    height:80px;
+    display:flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin-top: 10px;
+    align-items: center;
+    
+    font-family: sans-serif;
+    
+    
+ }
+ 
+     .wish {
+     width:80%;
+     height:68px;
+     
+     align-items: center;
+     justify-content: space-between;
+     display:flex;
+     flex-direction: row;
+
+ }
+ .search{
+    width:40%;
+   font-size: 15px;
+   text-align: center; 
+   border-radius:55px; 
+   display: flex;
+   flex-direction: row;
+}
+
+
+.search input[type=text] {
+   width:100%;
+   padding: 6px;
+  position: relative;
+   margin-top: 8px;
+   margin-right: 12px;
+   font-size: 17px;
+   border-radius: 15px;
+   border-color: rgb(163, 155, 155);
+   border:1px solid ;
+ }
+ 
+
+
+
+ /* endirim ana sehife */
+
+#endirim{
+    width:100%;
+   
+    height:700px;
+}
+.bring-to-center{
+    width:100%;
+    height:100%;
+}
+.endirim-items-row{
+   
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height:100%;
+    background: rgb(151, 179, 231);
+   
+}
+.endirim-photo{
+    width:55%;
+    height:700px;
+    text-align: right;
+    margin-left: 5px;
+}
+.endirim-photo img{
+ vertical-align: middle;
+        height:700px;
+ 
+}
+.endirim-yaz{
+    width:45%;
+    height:700px;
+    text-align: center;
+    position: relative;
+    
+}
+.endirim-yaz-center{
+    width:280px;
+    
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    right: 55%;
+    display: flex;
+    flex-direction: column;
+
+}
+.endirim-item button{
+    width:120px;
+    height:30px;
+    border-radius: 15px;
+    background: rgb(66, 66, 243);
+    border:none;
+    color:white;
+    cursor: pointer;
+
+
+}
+
+
+
+
+h3{
+    
+        font-family: "Yellowtail", cursive;
+        color:#2577fd;
+        font-size: 30px;
+        display: inline-block;
+        line-height: 1.5;
+        
+}
+
+body{
+    background-color: #fff;
+}
+
+h1 {
+
+    padding:0px;
+    margin:0px;
+}
+
+/* category */
+
+#category{
+    width:100%;
+    padding:110px 0px;
+ }
+ 
+.category-bring-to-center{
+    width:100%;
+    margin:0px auto;
+    display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.category-items-row{
+    width:90%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.category-item{
+    width:31.5%;
+    height:265px;
+    background:whitesmoke;
+    padding:0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px darkgray;
+    position:relative;
+}
+.heading{
+    margin-bottom: 50px;
+
+}
+.category-img{
+    width:100%;
+}
+.category-img img {
+    width: 100%;
+    border-radius: 6px;
+    height:100%;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    
+}
+.category-caption{
+    position: absolute;
+    top:80px;
+    right:10px;
+    display:flex;
+    flex-direction: column;
+
+}
+
+ .category-img .category-caption h2 {
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+/*Latest-products */
+
+#Latest-products{
+    width:100%;
+    padding:110px 0px;
+}
+.products-bring-to-center{
+    width:100%;
+    margin:0px auto;
+    display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-items-row{
+    width:75%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.product-item{
+    width:29%;
+    height:450px;
+    background:whitesmoke;
+    padding:15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px darkgray;
+}
+.product-heading{
+    margin-bottom: 50px; 
+}
+.product-item .product-img img{
+    width:100%;
+}
+.img{
+    vertical-align: middle;
+    border-style: none;
+}
+.single-product {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    color: rgb(87, 70, 70);
+   
+
+}
+.checked {
+    color: orange;
+  }
+/*subscribe */
+
+#subscribe{
+    width:100%;
+    background:#44bddbde;
+ 
+    
+    
+}
+.subscribe-bring-to-center{
+    width:70%;
+    height:300px;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    padding-left: 500px;
+    
+    
+}
+
+ form{
+     display: flex;
+     flex-direction: row;
+     position: relative;
+     width:100%;
+ }
+ input { 
+    margin: 0px; 
+    padding: 0px; 
+    width: 250px; 
+    outline: none; 
+    height: 32px; 
+    border-radius: 15px; 
+    border:none;
+ }
+.container1 button { 
+    position: absolute; 
+    top: 0; 
+    border-radius: 15px; 
+    right: 0px; 
+    z-index: 2; 
+    border: none; 
+  
+    height: 100%; 
+    cursor: pointer; 
+    color: white; 
+    background-color: #1e90ff; 
+    transform: translateX(2px); 
+} 
