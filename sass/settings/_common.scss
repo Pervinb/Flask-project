@@ -1,0 +1,35 @@
+body {
+    margin: 0px;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "section"
+    "footer";
+}
+#header{
+    grid-area: header;
+}
+#section{
+    grid-area: section;
+}
+#footer{
+    grid-area: footer;
+}
+// Bu class elementlerin hem x hem de y oxunda ortalanmasini temin edir
+// .flex-full-center {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+
+// .flex-horizontal-start {
+//     display: flex;
+//     justify-content: flex-start;
+//     align-items: center;
+// }
+
+// .align-items-center {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// } 
