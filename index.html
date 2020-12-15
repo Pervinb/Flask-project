@@ -5,14 +5,16 @@
        
     </head>
     <body>
-        <header id="navigation-bar">
-            <div class="bar-bring-to-center">
-                <div class="store-name">
+        <header id="header">
+            <div class="grid-container">
+                <div class="col-1">
                     <div class="logo">
-                        <h1>RStore</h1>
+                        <a href="">
+                            <img src="image/logo.webp" alt="">
+                        </a>
                     </div>
                 </div>
-                <div class="menu">
+                <div class="col-6 end">
                     <div class="menu-blog">
                         <ul>
                             <li><a href="">Home</a></li>
@@ -23,17 +25,31 @@
                         </ul>
                     </div>
                 </div>
-                <div class="search-sign">
+                <div class="col-5 end">
+                  <div class="nav-end">
                     <ul id="sign">
-                    <div class="wish">
-                    <div class="search">
-                        <input type="text" placeholder="Search.. ">
+                        <li class="search">
+                            <div class="search-products"><input type="text" placeholder="Search.. ">
+                              <div class="search-icon">
+                                <i class="fas fa-search special-tag"></i>
+                            </div>
                     </div>
-                    </div>
-                     <li> <a href="">wish list</a></li>
-                     <li><a href="">account</a></li>
+                    </li>
+                        <li class="heart">
+                            <div class="favorit-items">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </li>
+                        <li class="shopping-card">
+                            <div class="shop-card">
+                                <a href="cart.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="">sign in</li>
                     </ul>
-                    
+                  </div> 
                 </div>
             </div>
         </header>

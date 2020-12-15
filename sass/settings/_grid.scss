@@ -1,0 +1,52 @@
+$colWidth:100%/12;
+// [class^="col-"] {
+//     margin: 5px;
+
+// }
+.col-1 {
+    width: $colWidth*1;
+}
+
+.col-2 {
+    width: $colWidth*2;
+}
+
+.col-3 {
+    width: $colWidth*3;
+}
+
+.col-4 {
+    width: $colWidth*4;
+}
+
+.col-5 {
+    width: $colWidth*5;
+}
+
+.col-6 {
+    width: $colWidth*6;
+}
+
+.col-7 {
+    width: $colWidth*7;
+}
+
+.col-8 {
+    width: $colWidth*8;
+}
+
+.col-9 {
+    width: $colWidth*9;
+}
+
+.col-10 {
+    width: $colWidth*10;
+}
+
+.col-11 {
+    width: $colWidth*11;
+}
+
+.col-12 {
+    width: $colWidth*12;
+}
