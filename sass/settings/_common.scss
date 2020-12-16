@@ -1,21 +1,4 @@
-body {
-    font-family: "Poppins", sans-serif;
-    margin: 0px;
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "section"
-    "footer";
-}
-#header{
-    grid-area: header;
-}
-#section{
-    grid-area: section;
-}
-#footer{
-    grid-area: footer;
-}
+
 // Bu class elementlerin hem x hem de y oxunda ortalanmasini temin edir
 // .flex-full-center {
 //     display: flex;

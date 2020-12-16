@@ -1,30 +1,4 @@
 body {
-  font-family: "Poppins", sans-serif;
-  margin: 0px;
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "header" "section" "footer";
-}
-
-#header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: header;
-}
-
-#section {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: section;
-}
-
-#footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: footer;
-}
-
-body {
   background-color: #fff;
   font-family: "Poppins", sans-serif;
   font-weight: normal;
@@ -42,6 +16,11 @@ h3 {
   font-size: 30px;
   display: inline-block;
   line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .col-1 {
@@ -234,6 +213,41 @@ h3 {
           flex-direction: column;
 }
 
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 2fr auto;
+      grid-template-columns: 2fr 1fr 2fr auto;
+  -ms-grid-rows: 3fr auto;
+      grid-template-rows: 3fr auto;
+      grid-template-areas: "footlogo quicklinks newproducts support" "copyrights copyrights copyrights socials";
+  gap: 1rem;
+}
+
+.footlogo {
+  display: inline-block;
+}
+
+.quicklinks {
+  display: inline-block;
+}
+
+.newproducts {
+  display: inline-block;
+}
+
+.support {
+  display: inline-block;
+}
+
+.copyrights {
+  display: inline-block;
+}
+
+.socials {
+  display: inline-block;
+}
+
 #header {
   margin: 0px;
   padding: 0px;
@@ -258,6 +272,11 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   margin: 5px;
+}
+
+#header .grid-container .start {
+  display: inline-block;
+  background-color: red;
 }
 
 #header .grid-container .end {
@@ -295,10 +314,12 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  display: inline-block;
 }
 
 #header .grid-container .end ul li {
   list-style: none;
+  display: inline-block;
 }
 
 #header .grid-container .end a {
@@ -313,6 +334,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: inline-block;
 }
 
 .search {
@@ -437,7 +459,7 @@ h3 {
 
 #subscribe {
   width: 100%;
-  background: #44bddbde;
+  background: lightskyblue;
 }
 
 #subscribe .subscribe-bring-to-center {

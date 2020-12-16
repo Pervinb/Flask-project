@@ -1,0 +1,27 @@
+.container{
+    display:grid;
+    grid-template-columns:2fr 1fr 2fr auto ;
+    grid-template-rows: 3fr auto;
+    grid-template-areas:
+         "footlogo quicklinks newproducts support"
+         "copyrights copyrights copyrights socials";
+    gap: 1rem;     
+}
+.footlogo{
+    display: inline-block;
+}
+.quicklinks{
+    display: inline-block;
+}
+.newproducts{
+    display: inline-block;
+}
+.support{
+    display: inline-block;
+}
+.copyrights{
+    display: inline-block;
+}
+.socials{
+    display: inline-block;
+}
