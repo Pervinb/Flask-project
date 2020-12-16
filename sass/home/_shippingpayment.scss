@@ -1,0 +1,63 @@
+.shipping-container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 250px;
+    .row{
+        width:1500px;
+        height:250px;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        .box{
+            height:100%;
+            display:inline-block;
+            .shipbox{
+                display:flex;
+                flex-direction:row;
+                text-align:left;
+                margin-bottom: 40px;
+                i {
+                    font-size: 40px;
+                    color: #282828;
+                    margin-bottom: 25px;
+                    display: block;
+                }
+                [class^="ti-"], [class*=" ti-"] {
+                    font-family: 'themify';
+                    speak: none;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-variant: normal;
+                    text-transform: none;
+                    line-height: 1;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                }
+                h6 {
+                    color: #282828;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 1.2;
+                    margin-bottom: 12px;
+                    font-family: "Poppins", sans-serif;
+                 }
+                 p {
+                    font-size: 16px;
+                    line-height: 30px;
+                    margin-bottom: 15px;
+                    font-weight: normal;
+                    color: #506172;
+                }
+            }
+        }
+    }
+}
+
+
+
+ 
+ 
+
