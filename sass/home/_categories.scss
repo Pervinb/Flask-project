@@ -30,11 +30,7 @@
                 position:relative;
                 .category-img{
                     width:100%;
-                    .category-img img {
-                        width: 100%;
-                        border-radius: 6px;
-                        height:100%;
-                    }
+                    
                 }
                 .category-img img {
                     width: 100%;
@@ -46,18 +42,76 @@
                     }
                     .category-caption{
                         position: absolute;
-                        top:80px;
-                        right:10px;
-                        @extend .column;
+                        // top:80px;
+                        // right:10px;
+                        // @extend .column;
+                        
+                        
                     
                     }
-                     .category-img .category-caption h2 {
-                        font-size: 22px;
-                        margin-bottom: 0px;
-                    }
+                     
                 }
             }
         }
 
     }
  }
+ .best a{
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.1;
+    text-transform: capitalize;
+    background: #ffce25;
+    padding: 13px 24px;
+    border-radius: 30px;
+    display: inline-block;
+ }
+ .category-caption  h2 {
+    color: #1f1f1f;
+    text-transform: capitalize;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: capitalize;
+    margin-bottom: 13px;
+    font-family: "Playfair Display", serif;
+    color: #0b1c39;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: normal;
+ }
+ .category-caption .collection {
+    display: block;
+    color: #0071fe;
+    // text-transform: capitalize;
+    font-size: 23px;
+    line-height: 1.1;
+    text-transform: capitalize;
+    font-family: "Yellowtail", cursive;
+    font-weight: 600;
+    text-shadow: 0px -3px 0px #fff;
+    margin-top: -8px;
+ }
+ .category-item {
+    text-align: center!important;
+    
+}
+.category-caption p {
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: normal;
+    margin-top: 0;
+}    
+.category-caption{
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    // display:inline-block;
+    position:absolute;
+}

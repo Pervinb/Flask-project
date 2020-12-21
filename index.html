@@ -2,7 +2,8 @@
     <head>
         <link rel="stylesheet" href='css/style.css'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
     </head>
     <body>
         <header id="header">
@@ -31,23 +32,25 @@
                         <li class="search">
                             <div class="search-products"><input type="text" placeholder="Search.. ">
                               <div class="search-icon">
-                                <i class="fas fa-search special-tag"></i>
+                                <i class="fa fa-fw fa-search"></i>
+                              </div>
                             </div>
-                    </div>
-                    </li>
+                        </li>
                         <li class="heart">
                             <div class="favorit-items">
-                                <i class="far fa-heart"></i>
+                                <i class=""></i>
                             </div>
                         </li>
                         <li class="shopping-card">
                             <div class="shop-card">
                                 <a href="cart.html">
-                                    <i class="fas fa-shopping-cart"></i>
+                                    <i class=""></i>
                                 </a>
                             </div>
                         </li>
-                        <li class="">sign in</li>
+                        <li class="signb">
+                            <button class="buttonnav">Sign in </button>
+                        </li>
                     </ul>
                   </div> 
                 </div>
@@ -65,9 +68,11 @@
                         </div>
                         <div class="endirim-yaz">
                           <div class="endirim-yaz-center">
-                            <h3 class="endirim-item2">30% Discount</h3>
+                            <span data-animation="fadeInRight" data-delay=".4s" class="anima" style="animation-delay: 0.4s;">60% Discount</span>
                             <h1 class="endirim-item1">Winter <br> Collection</h1>
-                           <div class="endirim-item"> <button type="button">Shop Now</button></div> 
+                           <div class="hero__btn" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;">
+                            <a href="industries.html" class="btn hero-btn">Shop Now</a>
+                            </div> 
                           </div>
                         </div>
                     </div> 
@@ -91,9 +96,9 @@
                                     <div class="category-img">
                                         <img src="image/cat2.jpg" alt="">
                                         <div class="category-caption">
-                                        <h2>Winter Cloth</h2>
-                                        <span class="best"><a href="#">Best New Deals</a></span>
-                                        <span class="collection">New Collection</span>
+                                            <span class="collection">Discount!</span>
+                                            <h2>Winter Cloth</h2>
+                                            <p>New Collection</p>
                                         </div>
                                     </div>
                                 </div>
@@ -101,7 +106,7 @@
                                     <div class="category-img">
                                         <img src="image/cat3.jpg" alt="">
                                         <div class="category-caption">
-                                        <h2>Man`s CLoth</h2>
+                                        <h2>Man`s Cloth</h2>
                                         <span class="best"><a href="#">Best New Deals</a></span>
                                         <span class="collection">New Collection</span>
                                         </div>
@@ -274,27 +279,31 @@
             <!-- shipping and secure payments  details ......   Start... -->
             <div class="shipping-container">
               <div class="row">
-                <div class="col-3 box">
-                    <div class="shipbox">
-                        <i class="ti-package"></i>
-                        <h6>Free Shipping Method</h6>
-                        <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
-                    </div>
-                </div>
-                <div class="col-3 box">
-                    <div class="shipbox">
-                        <i class="ti-unlock"></i>
-                        <h6>Secure Payment System</h6>
-                        <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+                  <div class="row-center">
+                    <div class="col-3 box">
+                        <div class="shipbox">
+                            <i class="fad fa-box"></i>
+                            <h6>Free Shipping Method</h6>
+                            <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+                        </div>
                     </div>
                     <div class="col-3 box">
                         <div class="shipbox">
-                            <i class="ti-reload"></i>
+                            <i class="fa fa-lock" aria-hidden="true"></i>
                             <h6>Secure Payment System</h6>
                             <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
                         </div>
+                    </div>   
+                    <div class="col-3 box">
+                            <div class="shipbox">
+                                <i class="ti-reload"></i>
+                                <h6>Secure Payment System</h6>
+                                <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+                            </div>
+                               
                     </div>       
-                </div>                     
+                  </div>
+                             
               </div>
             </div>
              <!-- shipping and secure payments  details ...... End -->
