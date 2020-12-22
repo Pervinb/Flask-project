@@ -1,3 +1,15 @@
+[class^="ti-"], [class*=" ti-"] {
+  font-family: 'themify';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   background-color: #fff;
   font-family: "Poppins", sans-serif;
@@ -291,17 +303,31 @@ a {
 }
 
 .container {
-  width: 1200px;
-  height: 500px;
+  width: 1150px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
   display: grid;
   grid-template-columns: 30% 20% 25% 25%;
   grid-template-rows: 90% 10%;
+  grid-gap: 10px;
   grid-template-areas: "footlogo quicklinks newproducts support" "copyrights copyrights copyrights socials";
 }
 
 .container .footlogo {
   grid-area: footlogo;
   display: inline-block;
+  margin-bottom: 40px;
+}
+
+.container .footlogo p {
+  color: #888888;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 2;
+  margin-bottom: 20px;
 }
 
 .container .quicklinks {
@@ -309,14 +335,92 @@ a {
   grid-area: quicklinks;
 }
 
+.container .quicklinks ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container .quicklinks h4 {
+  color: #000;
+  font-size: 20px;
+  margin-bottom: 29px;
+  margin-top: 0px;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+
+.container .quicklinks li {
+  color: #012f5f;
+  margin-bottom: 15px;
+}
+
+.container .quicklinks li a {
+  color: #868c98;
+  font-weight: 300;
+}
+
 .container .newproducts {
   display: inline-block;
   grid-area: newproducts;
 }
 
+.container .newproducts ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container .newproducts h4 {
+  margin-top: 0px;
+  color: #000;
+  font-size: 20px;
+  margin-bottom: 29px;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+
+.container .newproducts li {
+  color: #012f5f;
+  margin-bottom: 15px;
+}
+
+.container .newproducts li a {
+  color: #868c98;
+  font-weight: 300;
+}
+
 .container .support {
   display: inline-block;
   grid-area: support;
+}
+
+.container .support ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container .support h4 {
+  margin-top: 0px;
+  color: #000;
+  font-size: 20px;
+  margin-bottom: 29px;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+
+.container .support li {
+  color: #012f5f;
+  margin-bottom: 15px;
+}
+
+.container .support li a {
+  color: #868c98;
+  font-weight: 300;
 }
 
 .container .copyrights {
@@ -334,48 +438,20 @@ a {
 
 .container .socials {
   display: inline-block;
+  display: flex;
   grid-area: socials;
 }
 
-.container .footer-tittle {
-  text-align: left;
-  margin-bottom: 50px;
-}
-
-.container .footer-tittle .footer-title h4 {
-  color: #000;
-  font-size: 20px;
-  margin-bottom: 29px;
-  font-weight: 500;
-  text-transform: capitalize;
-}
-
-.container .footer-tittle ul {
+.container .socials ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
-.container .footer-tittle ul li {
-  margin-bottom: 15px;
+.container .socials li {
+  list-style: none;
 }
 
-.container .footer-tittle ul a {
-  transition: all 0.3s ease-out 0s;
-  color: #868c98;
-  font-weight: 300;
-  outline: medium none;
-  background-color: transparent;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.container .footer-tittle p {
-  color: #868c98;
-  font-size: 16px;
-  margin-bottom: 50px;
-  line-height: 1.8;
-  font-weight: normal;
+.container .socials .fab {
+  font-family: Font Awesome\ 5 Brands;
 }
 
 #header {
@@ -730,15 +806,7 @@ input {
   align-items: center;
 }
 
-.shipping-container .row-center {
-  width: 100%;
-  height: 100%;
-  justify-content: space-between;
-  background-color: yellow;
-}
-
 .shipping-container .row {
-  background-color: red;
   width: 78%;
   align-items: center;
   display: inline-block;
@@ -749,26 +817,37 @@ input {
   justify-content: space-between;
 }
 
-.shipping-container .row .box {
+.shipping-container .row .row-center {
+  width: 100%;
   height: 100%;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 120px;
+}
+
+.shipping-container .row .row-center .box {
+  height: 100%;
+  width: 65%;
   display: inline-block;
 }
 
-.shipping-container .row .box .shipbox {
+.shipping-container .row .row-center .box .shipbox {
   display: flex;
-  flex-direction: row;
-  text-align: left;
-  margin-bottom: 40px;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 
-.shipping-container .row .box .shipbox i {
+.shipping-container .row .row-center .box i {
   font-size: 40px;
   color: #282828;
   margin-bottom: 25px;
   display: block;
 }
 
-.shipping-container .row .box .shipbox [class^="ti-"], .shipping-container .row .box .shipbox [class*=" ti-"] {
+.shipping-container .row .row-center .box [class^="ti-"], .shipping-container .row .row-center .box [class*=" ti-"] {
   font-family: 'themify';
   speak: none;
   font-style: normal;
@@ -780,21 +859,24 @@ input {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.shipping-container .row .box .shipbox h6 {
+.shipping-container .row .row-center .box h6 {
   color: #282828;
   font-size: 20px;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 12px;
   font-family: "Poppins", sans-serif;
+  margin-top: 0px;
+  font-style: normal;
 }
 
-.shipping-container .row .box .shipbox p {
+.shipping-container .row .row-center .box p {
   font-size: 16px;
   line-height: 30px;
   margin-bottom: 15px;
   font-weight: normal;
   color: #506172;
+  margin-top: 0;
 }
 
 .endirim-item button {

@@ -1,27 +1,110 @@
 .container{
-    width:1200px;
-    height:500px;
+    width: 1150px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    // background-color: blue;
+    margin-right: auto;
+    margin-left: auto;
     display:grid;
     grid-template-columns:30% 20% 25% 25% ;
     grid-template-rows: 90% 10% ;
+    grid-gap:10px;
     grid-template-areas:
          "footlogo quicklinks newproducts support"
          "copyrights copyrights copyrights socials"; 
+         
+
     .footlogo{
             grid-area:footlogo;
             display: inline-block;
+            margin-bottom: 40px;
+            p {
+                color: #888888;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 2;
+                margin-bottom: 20px;
+            }
         }
     .quicklinks{
             display: inline-block;
             grid-area: quicklinks;
-     }
+            ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            h4 {
+                color: #000;
+                font-size: 20px;
+                margin-bottom: 29px;
+                margin-top: 0px;
+                font-weight: 500;
+                text-transform: capitalize;
+                font-family: "Poppins", sans-serif;
+            }
+            li {
+                color: #012f5f;
+                margin-bottom: 15px;
+                a{
+                    color: #868c98;
+                    font-weight: 300;
+                    }
+             }
+        }    
     .newproducts{
             display: inline-block;
             grid-area: newproducts;
+            ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            h4 {
+                margin-top: 0px;
+                color: #000;
+                font-size: 20px;
+                margin-bottom: 29px;
+                font-weight: 500;
+                text-transform: capitalize;
+                font-family: "Poppins", sans-serif;
+            }
+            li {
+                color: #012f5f;
+                margin-bottom: 15px;
+                a{
+                    color: #868c98;
+                    font-weight: 300;
+                    }
+             }
     }
     .support{
             display: inline-block;
             grid-area: support;
+            ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            h4 {
+                margin-top: 0px;
+                color: #000;
+                font-size: 20px;
+                margin-bottom: 29px;
+                font-weight: 500;
+                text-transform: capitalize;
+                font-family: "Poppins", sans-serif;
+            }
+            li {
+                color: #012f5f;
+                margin-bottom: 15px;
+                a{
+                color: #868c98;
+                font-weight: 300;
+                }
+                
+             }
     }
      .copyrights{
             display: inline-block;
@@ -33,51 +116,60 @@
                 line-height: 2;
                 margin-bottom: 20px;
             }
+           
     }
     .socials{
             display: inline-block;
+            display: flex;
             grid-area: socials;
-        }     
-    .footer-tittle{
-            text-align:left;
-            margin-bottom: 50px;
-            .footer-title 
-            h4 {
-                color: #000;
-                font-size: 20px;
-                margin-bottom: 29px;
-                font-weight: 500;
-                text-transform: capitalize;
-                
-            }
             ul{
                 list-style: none;
-                margin: 0;
-                padding: 0;
-                 li {margin-bottom: 15px;
-                 }
-                a{
-                    transition: all 0.3s ease-out 0s;
-                    color: #868c98;
-                    font-weight: 300;
-                    outline: medium none;
-                    background-color: transparent;
-                    cursor: pointer;
-                    text-decoration: none;
-                }
             }
-              
-                p {
-                    color: #868c98;
-                    font-size: 16px;
-                    margin-bottom: 50px;
-                    line-height: 1.8;
+            li{
+                list-style: none;
+            }
+            .fab {
+                font-family: Font Awesome\ 5 Brands;
+            }
+        }     
+    // .footer-tittle{
+    //         text-align:left;
+    //         margin-bottom: 50px;
+    //         display:flex;
+    //         flex-direction:column;
+             
+    //         h4 {
+    //             color: #000;
+    //             font-size: 20px;
+    //             margin-bottom: 29px;
+    //             font-weight: 500;
+    //             text-transform: capitalize;
+                
+    //         }
+    //         ul{
+                
+    //             margin: 0;
+    //             padding: 0;
+    //             list-style-type: none;
+                 
+                
+                
+    //             // a{
+    //             //     transition: all 0.3s ease-out 0s;
+    //             //     color: #868c98;
+    //             //     font-weight: 300;
+    //             //     outline: medium none;
+    //             //     background-color: transparent;
+    //             //     cursor: pointer;
+    //             //     text-decoration: none;
                     
-                    font-weight: normal;
-                }
+    //             // }
+    //         }
+              
+                
             
         
-        }
+        
 }
 
 
