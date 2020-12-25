@@ -1,15 +1,3 @@
-[class^="ti-"], [class*=" ti-"] {
-  font-family: 'themify';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 body {
   background-color: #fff;
   font-family: "Poppins", sans-serif;
@@ -450,10 +438,6 @@ a {
   list-style: none;
 }
 
-.container .socials .fab {
-  font-family: Font Awesome\ 5 Brands;
-}
-
 #header {
   margin: 0px;
   padding: 0px;
@@ -469,14 +453,15 @@ a {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin: 5px;
+  margin: 0px;
   margin-top: -6px;
-  padding-left: 15px;
   box-sizing: border-box;
+  background-color: red;
 }
 
 #header .grid-container .start {
   display: inline-block;
+  padding-left: 15px;
 }
 
 #header .grid-container .end {
@@ -629,6 +614,31 @@ a {
   border: 0;
   cursor: pointer;
   position: relative;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #2577fd;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
 }
 
 #Latest-products {
