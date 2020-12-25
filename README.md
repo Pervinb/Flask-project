@@ -8,4 +8,6 @@
 ### Day 06 *"Header" ve "discount" css ile duzelisler edildi*
 ### Day 07 *"Categories" css ile duzeldildi*
 ### Day 08 *"Foote" css ile yazildi*
+### Day 08 *Sticky navbar ve arrow up qurasdirildi*
+
 
