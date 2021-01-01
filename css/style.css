@@ -3,6 +3,10 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -624,6 +628,7 @@ a {
 .sticky {
   position: fixed;
   top: 0;
+  left: 0;
   background: white;
   width: 100%;
   z-index: 1;
@@ -631,7 +636,6 @@ a {
 }
 
 #myBtn {
-  display: none;
   position: fixed;
   bottom: 20px;
   right: 30px;
@@ -894,6 +898,90 @@ input {
   font-weight: normal;
   color: #506172;
   margin-top: 0;
+}
+
+.signuparea {
+  min-height: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../image/category.webp");
+}
+
+.signuparea .s-container {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-position: center center;
+}
+
+.signuparea .s-container .login-back {
+  margin: auto;
+}
+
+.signuparea .s-container .login-back h2 {
+  color: #000;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+form {
+  display: grid;
+  padding: 1em;
+  background: #f9f9f9;
+  border: 1px solid #c1c1c1;
+  margin: 2rem auto 4rem auto;
+  max-width: 600px;
+  padding: 1em;
+  margin-bottom: 30px;
+}
+
+form input {
+  background: #fff;
+  border: 1px solid #9c9c9c;
+}
+
+form button {
+  border: 1px solid red;
+  padding: 0.7em;
+  width: 100%;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+form button:hover {
+  background: #2577fd;
+  color: white;
+  border: none;
+}
+
+label {
+  padding: 0.5em 0.5em 0.5em 0;
+}
+
+input {
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 400px) {
+  form {
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+  }
+  label {
+    text-align: right;
+    grid-column: 1 / 2;
+  }
+  input,
+  button {
+    grid-column: 2 / 3;
+  }
 }
 
 .endirim-item button {
