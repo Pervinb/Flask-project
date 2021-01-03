@@ -51,13 +51,16 @@ form input {
 background: #fff;
 border: 1px solid #9c9c9c;
 
+
 }
 form button {
-border: 1px solid red;
+border: 1px solid  #2577fd;
+color:  #2577fd;
+border-radius: 30px;
 
 padding: 0.7em;
 width: 100%;
-border: 0;
+// border: 0;
 text-transform: uppercase;
 font-weight: 400;
 }
@@ -92,4 +95,7 @@ input,
 button {
 grid-column: 2 / 3;
 }
+}
+input radio{
+    
 }
