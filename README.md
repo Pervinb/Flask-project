@@ -10,6 +10,8 @@
 ### Day 08 *"Foote" css ile yazildi*
 ### Day 09 *Sticky navbar ve arrow up qurasdirildi (ilk Javascript kodlari)*
 ### Day 10 *register sehifesi yaradildi*
+### Day 11 *register sehifesine js kodlari elave edildi*
+
 
 
 
