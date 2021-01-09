@@ -1,5 +1,5 @@
 # PragmatechFoundationProject
-## Bu Bir ecommerce layihəsidir,Ana səhifə a)Header b) Section (endirim,məhsul siyahısı,abunə) c)footer hissəsindən 2)Qeydiyyat 3)Məhsul.4)Kateqoriya,5)Sifariş vermə  və 6)Sebet ## sehifəsindən ibarət olacaq.Nümunə linki (https://colorlib.com/preview/#estore) ve database schema linki (https://app.dbdesigner.net/designer/schema/383910) 
+## Bu Bir ecommerce layihəsidir,1)Ana səhifə a)Header b) Section (endirim,məhsul siyahısı,abunə) c)footer hissəsindən 2)Qeydiyyat 3)Məhsul.4)Kateqoriya,5)Sifariş vermə  və 6)Sebet  sehifəsindən ibarət olacaq.Nümunə linki (https://colorlib.com/preview/#estore) ve database schema linki (https://app.dbdesigner.net/designer/schema/383910) 
 ### Day 01 *ilkin olaraq website-nin ana səhifəsi (footer xaric ) sadə html və css kodları istifadə olunaraq yazılıb*
 ### Day 02 *Layihə sass-da yazılmağa başlanıldı.*
 ### Day 03 *"shipping" ,"Gallery" və footer hissesinin  html kodlari yazildi*
