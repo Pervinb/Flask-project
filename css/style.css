@@ -294,6 +294,10 @@ a {
   margin: 0;
 }
 
+.transition-pack, .container .quicklinks li a, .container .newproducts li a, .container .support li a {
+  transition: all 0.3s ease-out 0s;
+}
+
 .container {
   width: 1150px;
   padding-top: 40px;
@@ -983,6 +987,22 @@ input {
   button {
     grid-column: 2 / 3;
   }
+}
+
+.product-details {
+  height: auto;
+}
+
+.slider {
+  margin-top: 150px;
+  width: 100%;
+  height: auto;
+}
+
+.footer-title li a:hover {
+  margin-left: 8px;
+  color: #007bff;
+  transition: all 0.3s ease-out 0s;
 }
 
 .endirim-item button {

@@ -1,0 +1,20 @@
+.product-details{
+    height:auto
+    
+}
+.slider{
+    margin-top: 150px;
+    width:100%;
+    height: auto;
+}
+.footer-title li a:hover{
+    margin-left:8px;
+    color:#007bff;
+    // transition-duration: 1s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    
+}

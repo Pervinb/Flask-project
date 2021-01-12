@@ -1,3 +1,15 @@
+//      extend start
+
+.transition-pack{
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+
+}
+//      extend end 
+
 .container{
     width: 1150px;
     padding-top: 40px;
@@ -50,6 +62,7 @@
                 a{
                     color: #868c98;
                     font-weight: 300;
+                    @extend .transition-pack;
                     }
              }
         }    
@@ -76,6 +89,7 @@
                 a{
                     color: #868c98;
                     font-weight: 300;
+                    @extend .transition-pack;
                     }
              }
     }
@@ -102,6 +116,8 @@
                 a{
                 color: #868c98;
                 font-weight: 300;
+                @extend .transition-pack;
+                // transition-duration: 1s;
                 }
                 
              }
