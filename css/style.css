@@ -995,8 +995,132 @@ input {
 
 .slider {
   margin-top: 150px;
+  width: 1000px;
+  height: 600px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider .slider-image {
   width: 100%;
+  height: 100%;
+  margin: 5px 0px;
+}
+
+.slider .slider-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-image .slider-image--visible {
+  display: block;
+}
+
+.slider .arrows {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider .arrows .prev, .slider .arrows .next {
+  cursor: pointer;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.slider .arrows .prev:hover, .slider .arrows .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider-info {
+  margin: auto;
+  margin-top: 20px;
   height: auto;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sliderh1 {
+  margin: auto;
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  color: #0b1c39;
+  margin-top: 0px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.sliderp {
+  margin: auto;
+  margin-top: 20px;
+  color: #707070;
+  font-family: "Poppins", sans-serif;
+  color: #506172;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.btnn {
+  width: 130px;
+  align-items: center;
+  background: #2577fd;
+  -moz-user-select: none;
+  text-transform: capitalize;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 0;
+  margin-bottom: 0;
+  padding: 27px 44px;
+  border-radius: 25px;
+  margin: 10px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+  z-index: 1;
+  border: 0;
+  overflow: hidden;
+  margin: 0;
+}
+
+.hero-btnn {
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.checkout {
+  height: 100px;
+  width: 400px;
+  margin: 20px auto;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+input {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid;
+  width: 50px;
+  height: 25px;
 }
 
 .footer-title li a:hover {
