@@ -36,7 +36,9 @@ Database schema linki (https://app.dbdesigner.net/designer/schema/383910)
 ### Day 13
 * *product details sehifesi yaradilmaga baslanildi* 
 * *footer hissesindeki metnlerin css hissesinde deyisiklik edildi*
-
+### Day 14
+* *image-slider yaradildi* 
+* *product sehifesi bitdi*
 
 
 
