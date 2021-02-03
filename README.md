@@ -33,6 +33,10 @@ Database schema linki (https://app.dbdesigner.net/designer/schema/383910)
 *register sehifesine js kodlari elave edildi*
 ### Day 12 
 *database schema design edildi*
+### Day 13
+* *product details sehifesi yaradilmaga baslanildi* 
+* *footer hissesindeki metnlerin css hissesinde deyisiklik edildi*
+
 
 
 
