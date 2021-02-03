@@ -107,6 +107,7 @@
     border: 0;
     overflow: hidden;
     margin: 0;
+
     
 }
 .hero-btnn{
@@ -114,8 +115,17 @@
     margin-bottom: 50px;
     margin-top: 0;
 }
-.checkout {
+.quantity{
+    width:500px;
+    margin: auto;
+    
+    display: flex;
+    justify-content: center;
     height: 100px;
+    align-items: center;
+}
+.input_div {
+    height: 200px;
     width: 400px;
     margin: 20px auto;
     text-align: center;

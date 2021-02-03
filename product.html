@@ -90,16 +90,15 @@
                 <p class="sliderp">
                     Seamlessly empower fully researched growth strategies and interoperable internal or “organic” sources. Credibly innovate granular internal or “organic” sources whereas high standards in web-readiness. Credibly innovate granular internal or organic sources whereas high standards in web-readiness. Energistically scale future-proof core competencies vis-a-vis impactful experiences. Dramatically synthesize integrated schemas. with optimal networks.
                     </p>
-                
-                    <div class="checkout">
-  
-                        <p class="price" data-price="11">$11 per product</p>
-                        
-                        <button type="button" class="decrease-btn">-</button>
-                        <input type="text" class="quantity" value="1">
-                        <button type="button" class="increase-btn">+</button>
-                        
-                    </div>    
+                    <div class="quantity">
+                        <div id="input_div">
+    
+                            <input type="button" value="-" id="moins" onclick="minus()">
+                            <input type="text" size="25" value="1" id="count">
+                            <input type="button" value="+" id="plus" onclick="plus()">
+                        </div>   
+                    </div>
+                   
                 
                 <a href="" class="btnn hero-btnn">Add to CART</a>
             </div>
@@ -177,6 +176,8 @@
         </div>
     </footer>
     <script src="js/productslider.js"></script>   
+    <script src="js/quantity.js"></script>
+
     
 </body>
 </html>
