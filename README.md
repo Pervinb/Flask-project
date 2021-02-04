@@ -40,7 +40,9 @@ Database schema linki (https://app.dbdesigner.net/designer/schema/383910)
 * *image-slider yaradildi* 
 * *product sehifesi bitdi*
 ### Day 15
-* *kateqoriya yaradildi* 
+* *kateqoriya yaradildi*
+### Day 15
+* *Sebet sehifesi yaradildi*
 
 
 
