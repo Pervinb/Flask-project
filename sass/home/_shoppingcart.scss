@@ -1,0 +1,139 @@
+.shoppingcart{
+    width:1100px;
+    height:auto;
+   
+    margin: 50px auto;
+    
+    
+
+
+}
+.shoppingcartcenter{
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    display: block;
+    justify-content: start;
+}
+.shopheader{
+    width: 100%;
+    height:30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+   
+}
+.h4start{
+    width:60%;
+    height: 30px;
+    
+}
+.h4end{
+    width:40%;
+    height: 30px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h4{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+    color: #828bb2;
+}
+.shopbody{
+    width:100%;
+    height: auto;
+    margin:10px 0;
+    
+}
+.pr1{
+    width:100%;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+    border-top: 1px solid grey;
+}
+.namestart{
+    width:60%;
+    
+    
+    display: flex;
+    flex-direction: row;
+    img{
+        border: 1px solid #eeeeee;
+        border-radius: 3px;
+        max-width: 150px;
+        
+    }
+}
+.nameend{
+    width:40%;
+    align-items: center;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+p{
+    vertical-align: middle;
+    align-self: center;
+    font-family: "Poppins", sans-serif;
+    color: #506172;
+    font-size: 16px;
+    line-height: 30px;
+}
+.quantity{
+    vertical-align: middle;
+    
+}
+.subtotal{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    border-top: 1px solid grey;
+    
+    
+    
+}
+.subtotalend{
+    width: 40%;
+    height: 30px;
+    margin-left: 870px;
+    display: flex;
+    
+    justify-content: space-between;
+  h5{
+    font-weight: bold;
+    color: black;
+  }
+
+}
+.shopbuttons{
+    width: 100%;
+    margin-top: 50px;
+    
+    display: flex;
+    justify-content: space-between;
+   
+   
+    
+}
+
+
+.btncart {
+    display: inline-block;
+    padding: 17px 50px;
+    border-radius: 5px;
+    background-color: #2577fd;
+    
+    font-size: 15px;
+    font-weight: 500;
+    
+    transition: 0.5s;
+    text-transform: capitalize;
+    color: #fff;
+}    
