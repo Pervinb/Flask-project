@@ -1,0 +1,404 @@
+<html>
+    <head>
+        <link rel="stylesheet" href='./static/css/style.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+        <header id="header">
+            <div class="grid-container">
+                <div class="col-1 start">
+                    <div class="logo">
+                        <a href="">
+                            <img src="./static/image/logo.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 end">
+                    <div class="menu-blog">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="category.html">Category</a></li>
+                            <li><a href="">Latest</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-5 end">
+                  <div class="nav-end">
+                    <ul id="sign">
+                        <li class="search">
+                            <div class="search-products"><input type="text" placeholder="Search.. ">
+                              <div class="search-icon">
+                                <i class="fa fa-search"></i>
+                              </div>
+                            </div>
+                        </li>
+                        <li class="heart">
+                            <div class="favorit-items">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </li>
+                        <li class="shopping-card">
+                            <div class="shop-card">
+                                <a href="cart.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span class="count">10</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="signb">
+                            <button class="buttonnav">Sign in </button>
+                        </li>
+                    </ul>
+                  </div> 
+                </div>
+            </div>
+        </header>
+       
+        <section>
+            <div id="endirim">
+                <div class="bring-to-center">
+                    
+                    
+                    <div class="endirim-items-row">
+                        <div class="endirim-photo">
+                         <img src="./static/image/hero_man.png" alt="">   
+                        </div>
+                        <div class="endirim-yaz">
+                          <div class="endirim-yaz-center">
+                            <span data-animation="fadeInRight" data-delay=".4s" class="anima" style="animation-delay: 0.4s;">60% Discount</span>
+                            <h1 class="endirim-item1">Winter <br> Collection</h1>
+                           <div class="hero__btn" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;">
+                            <a href="industries.html" class="btn hero-btn">Shop Now</a>
+                            </div> 
+                          </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div id="category">
+                <div class="category-bring-to-center">
+                        <h1 class="heading">Category</h1>
+                        <div class="category-items-row">                      
+                                <div class="category-item">
+                                    <div class="category-img">
+                                        <img src="./static/image/cat1 (1).jpg" alt="">
+                                        <div class="category-caption">
+                                        <h2>Women`s</h2>
+                                        <span class="best"><a href="#">Best New Deals</a></span>
+                                        <span class="collection">New Collection</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category-item">
+                                    <div class="category-img">
+                                        <img src="./static/image/cat2.jpg" alt="">
+                                        <div class="category-caption">
+                                            <span class="collection">Discount!</span>
+                                            <h2>Winter Cloth</h2>
+                                            <p>New Collection</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category-item">
+                                    <div class="category-img">
+                                        <img src="./static/image/cat3.jpg" alt="">
+                                        <div class="category-caption">
+                                        <h2>Man`s Cloth</h2>
+                                        <span class="best"><a href="#">Best New Deals</a></span>
+                                        <span class="collection">New Collection</span>
+                                        </div>
+                                     </div>
+                                </div>
+                        </div>
+                </div>
+            </div>
+            <div id="Latest-products">
+                <div class="products-bring-to-center">
+                        <h1 class="product-heading">Latest Products</h1>
+                        <div class="product-items-row">                      
+                               {% for product in products %}
+                                <div class="product-item">
+                                 <div class="single-product">
+                                  <div class="product-img">
+                                    
+                                    <img src="./static/image/product2.png" alt>
+                                  </div>
+                                  <div class="product-caption">
+                                    <div class="product-ratting">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <h4><a href="product/{{product.id}}">{{product.product_name}}</a></h4>
+                                    <div class="price">
+                                    
+                                    <span>50${</span>
+                                    
+                                    </div>
+                                  </div>  
+                                 </div> 
+                                </div>
+                               {% endfor %}
+
+                                <!-- <div class="product-item">
+                                    <div class="single-product">
+                                        <div class="product-img">
+                                            
+                                            <img src="./static/image/product1.png" alt>
+                                        </div>
+                                        <div class="product-caption">
+                                            <div class="product-ratting">
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <h4><a href="product.html">{{product.product_name}}</a></h4>
+                                            <div class="price">
+                                            
+                                            <span>{{product.product_price}}</span>
+                                            
+                                            </div>
+                                         </div>  
+                                        </div> 
+                                </div> -->
+                                <!-- <div class="product-item">
+                                    <div class="single-product">
+                                        <div class="product-img">
+                                            
+                                            <img src="./static/image/product3.png" alt>
+                                        </div>
+                                        <div class="product-caption">
+                                            <div class="product-ratting">
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <h4><a href="product.html">{{product.product_name}}</a></h4>
+                                            <div class="price">
+                                            
+                                            <span>{{product.product_price}}</span>
+                                            
+                                            </div>
+                                         </div>  
+                                        </div> 
+                                </div> -->
+                        </div>
+                        <!-- <div class="product-items-row">                      
+                                <div class="product-item">
+                                    <div class="single-product">
+                                        <div class="product-img">
+                                            
+                                            <img src="./static/image/product4.png" alt>
+                                        </div>
+                                        <div class="product-caption">
+                                            <div class="product-ratting">
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <h4><a href="product.html">{{product.product_name}}</a></h4>
+                                            <div class="price">
+                                            
+                                            <span>{{product.product_price}}</span>
+                                            
+                                            </div>
+                                         </div>  
+                                        </div> 
+                                </div>
+                                <div class="product-item">
+                                    <div class="single-product">
+                                        <div class="product-img">
+                                            
+                                            <img src="./static/image/product5.png" alt>
+                                        </div>
+                                        <div class="product-caption">
+                                            <div class="product-ratting">
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <h4><a href="product.html">{{product.product_name}}</a></h4>
+                                            <div class="price">
+                                            
+                                            <span>{{product.product_price}}</span>
+                                            
+                                            </div>
+                                         </div>  
+                                        </div> 
+                                </div>
+                                <div class="product-item">
+                                    <div class="single-product">
+                                        <div class="product-img">
+                                            
+                                            <img src="./static/image/product6.png" alt>
+                                        </div>
+                                        <div class="product-caption">
+                                            <div class="product-ratting">
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <h4><a href="product.html">{{product.product_name}}</a></h4>
+                                            <div class="price">
+                                            
+                                            <span>{{product.product_price}}</span>
+                                            
+                                            </div>
+                                         </div>  
+                                        </div> 
+                                </div>
+                        </div> -->
+                </div>
+            </div>
+            <div id="subscribe">
+                <div class="subscribe-bring-to-center">
+                    <div class="latest news"> 
+                        <h1>Get Our </br> Latest Offers News</h1>
+                    </div>
+                     <div class="container1"  >
+                        <form action="#" class="newsletter_form">
+                        <input type="text" placeholder=" Your mail">
+                        <button type="submit" class="btn btn_subscribe">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- shipping and secure payments  details ......   Start... -->
+            <div class="shipping-container">
+              <div class="row">
+                  <div class="row-center">
+                    <div class="col-4 box">
+                        <div class="shipbox">
+                            <i class="fas fa-box"></i>
+                            <h6>Free Shipping Method</h6>
+                            <p>aorem ixpsacdolor sit</br> ameasecur adipisicing elitsf </br> edasd.</p>
+                        </div>
+                    </div>
+                    <div class="col-4 box">
+                        <div class="shipbox">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                            <h6>Secure Payment System</h6>
+                            <p>aorem ixpsacdolor sit </br> ameasecur adipisicing elitsf </br> edasd.</p>
+                        </div>
+                    </div>   
+                    <div class="col-4 box">
+                            <div class="shipbox">
+                                <i class="fas fa-sync-alt"></i>
+                                <h6>Secure Payment System</h6>
+                                <p>aorem ixpsacdolor sit </br> ameasecur adipisicing elitsf </br> edasd.</p>
+                            </div>
+                               
+                    </div>       
+                  </div>
+                             
+              </div>
+            </div>
+             <!-- shipping and secure payments  details ...... End -->
+
+            <!-- Gallery Photo lists   ..........Start -->
+            <div class="gallery-area">
+                <div class="container-fluid">
+                    <div class="row">
+                      <div class="gallery-items">
+                        <img src="./static/image/gallery1.webp" alt>
+                      </div>
+                      <div class="gallery-items">
+                        <img src="./static/image/gallery2.webp" alt>
+                      </div>
+                       <div class="gallery-items">
+                        <img src="./static/image/gallery3.webp" alt>
+                      </div>
+                      <div class="gallery-items">
+                        <img src="./static/image/gallery4.webp" alt>
+                      </div>
+                      <div class="gallery-items">
+                        <img src="./static/image/gallery5.webp" alt>
+                      </div>
+                    </div>
+                </div>
+            </div>
+              <!-- Gallery Photo lists   ..........End -->
+        </section>
+
+        <footer>
+            <div class="footer-area">
+                <div class="container">
+                        <div class="footlogo">
+                         <a href="index.html">
+                             <img src="./static/image/logo.webp" alt>
+                         </a>
+                         <div class="footer-title">
+                             <p>Lorem ipsum dolor sit amet,</br>consectetur adipisicing elit sed</br>do eiusmod tempor incididunt</br>ut labore.</p>
+                         </div>
+                        </div>
+                        <div class="quicklinks">
+                            <div class="footer-title">
+                                <h4>Quick Links</h4>
+                                <ul>
+                                   <li><a href="#" >About</a></li> 
+                                   <li><a href="#" >Offers&Discount</a></li> 
+                                   <li><a href="#" >Get Coupon</a></li> 
+                                   <li><a href="#" >Contact Us</a></li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="newproducts">
+                            <div class="footer-title">
+                                <h4>New Products</h4>
+                                <ul>
+                                   <li><a href="#" >Woman Cloth</a></li> 
+                                   <li><a href="#" >Fashion Accessories</a></li> 
+                                   <li><a href="#" >Man Accessories</a></li> 
+                                   <li><a href="#" >Rubber Made Toys</a></li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="support">
+                            <div class="footer-title">
+                                <h4>Support</h4>
+                                <ul>
+                                   <li><a href="#" >Frequently Asked Questions</a></li> 
+                                   <li><a href="#" >Terms & Conditions</a></li> 
+                                   <li><a href="#" >Privacy Policy</a></li> 
+                                   <li><a href="#" >Privacy Policy</a></li> 
+                                   <li><a href="#" >Report A Payment Issue</a></li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="copyrights">
+                            <p>
+                                Copyright © 2020 All rights reserved  </p>
+                        </div>
+                        <ul class="socials">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                        </ul>
+                </div>
+            </div>
+        </footer>
+        
+    <script src="./static/js/sticky.js"></script>   
+    <script src="./static/js/upbutton.js"></script> 
+    </body>
+</html>
