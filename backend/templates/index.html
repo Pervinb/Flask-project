@@ -122,8 +122,9 @@
                 <div class="products-bring-to-center">
                         <h1 class="product-heading">Latest Products</h1>
                         <div class="product-items-row">                      
-                               {% for product in products %}
+                               
                                 <div class="product-item">
+                                {% for product in all %}
                                  <div class="single-product">
                                   <div class="product-img">
                                     
@@ -140,15 +141,16 @@
                                     <h4><a href="product/{{product.id}}">{{product.product_name}}</a></h4>
                                     <div class="price">
                                     
-                                    <span>50${</span>
+                                    <span>50$</span>
                                     
                                     </div>
                                   </div>  
                                  </div> 
                                 </div>
-                               {% endfor %}
+                                {% endfor %}
+                               
 
-                                <!-- <div class="product-item">
+                                <div class="product-item"> 
                                     <div class="single-product">
                                         <div class="product-img">
                                             
@@ -162,16 +164,16 @@
                                                 <span class="fa fa-star"></span>
                                                 <span class="fa fa-star"></span>
                                             </div>
-                                            <h4><a href="product.html">{{product.product_name}}</a></h4>
+                                            <h4><a href="product.html"></a></h4>
                                             <div class="price">
                                             
-                                            <span>{{product.product_price}}</span>
+                                            <span></span>
                                             
                                             </div>
                                          </div>  
                                         </div> 
-                                </div> -->
-                                <!-- <div class="product-item">
+                                </div> 
+                                <div class="product-item"> 
                                     <div class="single-product">
                                         <div class="product-img">
                                             
@@ -185,17 +187,17 @@
                                                 <span class="fa fa-star"></span>
                                                 <span class="fa fa-star"></span>
                                             </div>
-                                            <h4><a href="product.html">{{product.product_name}}</a></h4>
+                                            <h4><a href="product.html"></a></h4>
                                             <div class="price">
                                             
-                                            <span>{{product.product_price}}</span>
+                                            <span></span>
                                             
                                             </div>
                                          </div>  
                                         </div> 
-                                </div> -->
+                                </div> 
                         </div>
-                        <!-- <div class="product-items-row">                      
+                        <div class="product-items-row">                       
                                 <div class="product-item">
                                     <div class="single-product">
                                         <div class="product-img">
@@ -210,10 +212,10 @@
                                                 <span class="fa fa-star"></span>
                                                 <span class="fa fa-star"></span>
                                             </div>
-                                            <h4><a href="product.html">{{product.product_name}}</a></h4>
+                                            <h4><a href="product.html"></a></h4>
                                             <div class="price">
                                             
-                                            <span>{{product.product_price}}</span>
+                                            <span></span>
                                             
                                             </div>
                                          </div>  
@@ -233,10 +235,10 @@
                                                 <span class="fa fa-star"></span>
                                                 <span class="fa fa-star"></span>
                                             </div>
-                                            <h4><a href="product.html">{{product.product_name}}</a></h4>
+                                            <h4><a href="product.html"></a></h4>
                                             <div class="price">
                                             
-                                            <span>{{product.product_price}}</span>
+                                            <span></span>
                                             
                                             </div>
                                          </div>  
@@ -256,16 +258,16 @@
                                                 <span class="fa fa-star"></span>
                                                 <span class="fa fa-star"></span>
                                             </div>
-                                            <h4><a href="product.html">{{product.product_name}}</a></h4>
+                                            <h4><a href="product.html"></a></h4>
                                             <div class="price">
                                             
-                                            <span>{{product.product_price}}</span>
+                                            <span></span>
                                             
                                             </div>
                                          </div>  
                                         </div> 
                                 </div>
-                        </div> -->
+                        </div> 
                 </div>
             </div>
             <div id="subscribe">

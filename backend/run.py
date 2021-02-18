@@ -25,7 +25,7 @@ def products():
     products=Product.query.all()
     return render_template('index.html',all=products)
 
-@app.route('/product/<int:id>',methods=['GET','POST'])
+@app.route('/product/<id>',methods=['GET','POST'])
 def product(id):
     single=Product.query.get(id)
     return render_template('product.html',product=single)
@@ -42,9 +42,9 @@ def adminAdd():
     if request.method == 'POST':
         product=Product(
             product_name=request.form['name'],
-            product_info=request.form['info'],
+            # product_info=request.form['info'],
             product_about=request.form['about'], 
-            product_price=request.form['price']
+            # product_price=request.form['price']
             )
         db.session.add(product)
         db.session.commit() 
