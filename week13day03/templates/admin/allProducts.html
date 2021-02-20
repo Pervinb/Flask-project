@@ -1,0 +1,41 @@
+{% extends 'admin/layout.html' %} 
+
+
+
+
+{% block pageContent %}
+
+    <h1 class="mt-4">Butun mehsullar</h1>
+    
+    <div class="card mb-4">
+        
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Mehsul id-si</th>
+                            <th>mehsul adi</th>
+                            
+                            <th>Sil</th>
+                            <th>Deyisdir</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for singleProduct in content %}
+                        <tr>
+                            <td>{{singleProduct.id}}</td>
+                            <td>{{singleProduct.title}}</td>
+                            <td><a href="delete/"><i class="fas fa-trash-alt"></i></a></td>
+                            <td><a href="update/"><i class="fas fa-edit"></i></a></td>
+                        </tr>
+                        {% endfor %}
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock pageContent %}
+

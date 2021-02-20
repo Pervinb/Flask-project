@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Product detail</title>
+    <link rel="stylesheet" href='css/style.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <header id="header">
+        <div class="grid-container">
+            <div class="col-1 start">
+                <div class="logo">
+                    <a href="">
+                        <img src="image/logo.webp" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 end">
+                <div class="menu-blog">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="category.html">Category</a></li>
+                        <li><a href="">Latest</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-5 end">
+              <div class="nav-end">
+                <ul id="sign">
+                    <li class="search">
+                        <div class="search-products"><input type="text" placeholder="Search.. ">
+                          <div class="search-icon">
+                            <i class="fa fa-search"></i>
+                          </div>
+                        </div>
+                    </li>
+                    <li class="heart">
+                        <div class="favorit-items">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </li>
+                    <li class="shopping-card">
+                        <div class="shop-card">
+                            <a href="cart.html">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="count">10</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="signb">
+                        <button class="buttonnav">Sign in </button>
+                    </li>
+                </ul>
+              </div> 
+            </div>
+        </div>
+    </header>
+    <section class="productdetail">
+        <div class="product-section">
+            <div class="signuparea">
+                <div class="s-container">
+                    <div class="login-back">
+                        <h2>Shopping Cart</h2>
+                    </div>
+                </div class="s-container">
+            </div>
+            <div class="shoppingcart">
+                <div class="shoppingcartcenter">
+                    <div class="shopheader">
+                    <div class="h4start"><h4 class="productname">Product</h4></div>
+                    <div class="h4end">
+                        <h4 other>Price</h4>
+                        <h4 other>Quantity</h4>
+                        <h4 other>Total</h4></div>
+                    </div>
+                    </div>
+                    <div class="shopbody">
+                        <div class="pr1">
+                            <div class="namestart">
+                                <img src="image/arrivel_1.webp">
+                                <p>Minimalistic shop for multipurpose use</p>
+                            </div>
+                            <div class="nameend">
+                                <h5>360</h5>
+                                <div class="quantity">
+                                    <div id="input_div">
+                
+                                        <input type="button" value="-" id="moins" onclick="minus()">
+                                        <input type="text" size="25" value="1" id="count">
+                                        <input type="button" value="+" id="plus" onclick="plus()">
+                                    </div>   
+                                </div>
+                                <h5>360</h5>
+                            </div>
+                        </div>
+                        <div class="pr1">
+                            <div class="pr1">
+                                <div class="namestart">
+                                    <img src="image/arrivel_2.webp">
+                                    <p>Minimalistic shop for multipurpose use</p>
+                                </div>
+                                <div class="nameend">
+                                    <h5>360</h5>
+                                    <div class="quantity">
+                                        <div id="input_div">
+                    
+                                            <input type="button" value="-" id="moins" onclick="minus()">
+                                            <input type="text" size="25" value="1" id="count">
+                                            <input type="button" value="+" id="plus" onclick="plus()">
+                                        </div>   
+                                    </div>
+                                    <h5>360</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subtotal">
+                        <div class="subtotalend">
+                          <h5>Subtotal</h5>
+                          <h5>720</h5>
+                        </div>
+                        
+                    </div>
+                    <div class="shopbuttons">
+                        
+                            <div class="btncart"><a  href="index.html">Continue Shopping</a></div>  
+                            <div class="btncart"><a  href="checkout.html">Proceed to checkout</a></div>  
+                        
+                      
+                      
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        
+    </section>
+    <footer>
+        <div class="footer-area">
+            <div class="container">
+                    <div class="footlogo">
+                     <a href="index.html">
+                         <img src="image/logo.webp" alt>
+                     </a>
+                     <div class="footer-title">
+                         <p>Lorem ipsum dolor sit amet,</br>consectetur adipisicing elit sed</br>do eiusmod tempor incididunt</br>ut labore.</p>
+                     </div>
+                    </div>
+                    <div class="quicklinks">
+                        <div class="footer-title">
+                            <h4>Quick Links</h4>
+                            <ul>
+                               <li><a href="#" >About</a></li> 
+                               <li><a href="#" >Offers&Discount</a></li> 
+                               <li><a href="#" >Get Coupon</a></li> 
+                               <li><a href="#" >Contact Us</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="newproducts">
+                        <div class="footer-title">
+                            <h4>New Products</h4>
+                            <ul>
+                               <li><a href="#" >Woman Cloth</a></li> 
+                               <li><a href="#" >Fashion Accessories</a></li> 
+                               <li><a href="#" >Man Accessories</a></li> 
+                               <li><a href="#" >Rubber Made Toys</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="support">
+                        <div class="footer-title">
+                            <h4>Support</h4>
+                            <ul>
+                               <li><a href="#" >Frequently Asked Questions</a></li> 
+                               <li><a href="#" >Terms & Conditions</a></li> 
+                               <li><a href="#" >Privacy Policy</a></li> 
+                               <li><a href="#" >Privacy Policy</a></li> 
+                               <li><a href="#" >Report A Payment Issue</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="copyrights">
+                        <p>
+                            Copyright © 2020 All rights reserved  </p>
+                    </div>
+                    <ul class="socials">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                    </ul>
+            </div>
+        </div>
+    </footer>
+    
+
+    
+</body>
+</html>
+
+
+
+

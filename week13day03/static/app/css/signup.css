@@ -1,0 +1,9 @@
+.s-container {
+  background-image: url(category.webp);
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: blue;
+}
+/*# sourceMappingURL=signup.css.map */
