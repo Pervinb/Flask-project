@@ -1,7 +1,7 @@
 {% extends 'admin/layout.html' %} {% block pageContent %}
 <h1 class="mt-4">Yeni mehsul elave et</h1>
 
-<form action="/admin/add" method="POST">
+<form action="/admin/add" method="POST" enctype="multipart/form-data">
     <div class="form-group">
         <label for="newsHeading">Mehsul adi</label>
         <input name='productHeading' type="text" class="form-control" id="productHeading" aria-describedby="emailHelp" placeholder="Mehsul adi">
@@ -9,6 +9,10 @@
     <div class="form-group">
         <label for="productContent">Mehsul haqda melumat</label>
         <textarea name="productContent" class="form-control" id="productContent" cols="30" rows="10"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="productPhoto">Mehsul shekli</label>
+        <input name='productPhoto' type="file" class="form-control" id="productHeading" aria-describedby="emailHelp" placeholder="Mehsul adi">
     </div>
 
     <button type="submit" class="btn btn-primary">Submit</button>
